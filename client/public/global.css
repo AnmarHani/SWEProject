@@ -1,0 +1,489 @@
+/* Start Variables */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+    --primary-background-color: linear-gradient(180deg, #18344C 0%, #4C7F9F 100%);
+    --secondary-background-color: #ffffff;
+    --tertiary-background-color: #4C7F9F;
+
+    --primary-font-color: #ffffff;
+    --secondary-font-color: #4C7F9F;
+    
+    --font-type: 'Almarai', sans-serif;
+
+    --light-font: 300;
+    --regular-font: 400;
+    --bold-font: 700;
+}
+/* End Variables */
+
+/* ----------------------------------------- */
+
+/* Start General Styles */
+* {
+    font-family: var(--font-type);
+    font-weight: var(--regular-font);
+    color: var(--primary-font-color);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    
+    background: var(--primary-background-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    background-size: 200% 200%;
+
+    -webkit-animation: background-animation 10s ease infinite;
+    animation: background-animation 10s ease infinite;
+}
+
+@-webkit-keyframes background-animation {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@keyframes background-animation {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+/* End General Styles */
+
+/* ----------------------------------------- */
+
+/* Start Buttons */
+.button-primary {
+    background-color: var(--secondary-background-color);
+    
+    color: var(--secondary-font-color);
+
+    border-radius: 100px;
+    
+    width: 10em;
+    height: 2em;
+
+    border: 3px solid var(--primary-font-color);
+    
+    transition: all .4s;
+}
+.button-primary:hover {
+    background-color: var(--primary-background-color);
+    
+    color: var(--primary-font-color);
+
+    border: 3px solid var(--primary-font-color);
+}
+
+.button-secondary {
+    background-color: var(--primary-background-color);
+    
+    color: var(--primary-font-color);
+
+    border-radius: 100px;
+    
+    width: 10em;
+    height: 2em;
+
+    border: 3px solid var(--primary-font-color);
+
+    transition: all .4s;
+}
+.button-secondary:hover {
+    background-color: var(--secondary-background-color);
+    
+    color: var(--secondary-font-color);
+
+    border: 3px solid var(--secondary-background-color);
+}
+/* End Buttons */
+
+/* ----------------------------------------- */
+
+/* Start Links */
+.link {
+    text-decoration: none;
+    
+    color: var(--primary-font-color);
+    
+    padding: 5px;
+
+    font-weight: var(--light-font);
+
+    border-bottom: 3px solid var(--primary-background-color);
+    
+    transition: all .1s;
+}
+.link-active {
+    text-decoration: none;
+    
+    color: var(--primary-font-color);
+    
+    padding: 5px;
+
+    font-weight: var(--bold-font);
+
+    border-bottom: 3px solid var(--secondary-background-color);
+    
+    transition: all .1s;
+}
+.link:hover, .link-active:hover {
+    border-bottom: 3px solid var(--secondary-background-color);
+    color: var(--primary-font-color);
+    font-weight: var(--bold-font);
+}
+/* End Links */
+
+/* ----------------------------------------- */
+
+/* Start Text */
+.text-title {
+    font-weight: var(--bold-font);
+    margin-bottom: 20px;
+}
+.text-normal {
+    font-weight: var(--regular-font);
+}
+.text-description {
+    font-weight: var(--light-font);
+}
+
+.extra-large {
+    font-size: 3.4em;
+}
+.large {
+    font-size: 2.7em;
+}
+
+.big {
+    font-size: 2.2em;
+}
+
+.medium {
+    font-size: 1.8em;
+}
+
+.small {
+    font-size: 1.2em;
+}
+/* End Text */
+
+/* ----------------------------------------- */
+
+/* Start Forms */
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    width: fit-content;
+}
+.form > button {
+    align-self: center;
+}
+
+.container-input {
+    display: flex;
+    width: 100%;
+}
+
+.container-input > .input{
+    border-radius: 40px 0px 0px 40px;
+
+    width: 20em;
+    height: 2em;
+
+    color: black;
+
+    padding: 15px;
+}
+
+
+/* End Forms */
+
+/* ----------------------------------------- */
+
+/* Start Icons */
+.icon {
+    text-align: center;
+    font-size: 1em;
+        
+    color: var(--primary-font-color);
+    
+    padding: 15px;
+}
+.container-input > .icon {
+    text-align: center;
+    font-size: 1em;
+    
+    background-color: var(--secondary-background-color);
+    
+    color: black;
+    
+    border-radius:  0px 50px 50px 0px;
+    
+    padding: 0px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+/* End Icons */
+
+/* ----------------------------------------- */
+
+/* Start Card */
+.card {
+    display: flex;
+    
+    width: 15em;
+    height: 10em;
+
+    margin: 1em;
+
+    padding: .5em;
+    
+
+    background-color: var(--tertiary-background-color);
+    
+    border: var(--tertiary-background-color) solid 4px;
+    border-radius: 20px;
+    
+    box-shadow: 6px 11px 5px -2px rgba(0, 0, 0, 0.3);
+
+    transition: all .5s;
+
+}
+.card:hover{
+    height: 10.5em;
+    transform: rotate(2deg);
+    background-color: var(--primary-background-color);
+    border: var(--primary-font-color) 4px solid;
+}
+
+.card-head {
+    display: flex;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    justify-content: flex-end;
+}
+.card-main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 1.3em;
+    border-bottom: var(--primary-font-color) 2px solid;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+/* End Card */
+
+/* ----------------------------------------- */
+
+/* Start Images */
+.image-square {
+    width: 25em;
+    height: 25em;
+    position: relative;
+    top: 70px;
+    -webkit-animation: image-animation 2s ease infinite;
+    animation: image-animation 2s ease infinite;
+}
+.image-regtangle {
+    width: 25em;
+    height: 23em;
+    position: relative;
+    top: 60px;
+    -webkit-animation: image-animation 2s ease infinite;
+    animation: image-animation 2s ease infinite;
+}
+
+@-webkit-keyframes image-animation {
+    0%{top:60px}
+    50%{top:20px}
+    100%{top:60px}
+}
+@keyframes image-animation {
+    0%{top:60px}
+    50%{top:20px}
+    100%{top:60px}
+}
+/* End Images */
+
+/* ----------------------------------------- */
+
+/* Start Containers */
+.custom-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary-background-color);
+    justify-content: space-around;
+    align-items: center !important;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100%;
+    border-radius: 19px;
+    border: .009px solid var(--primary-font-color);
+}
+
+.container-with-image {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}   
+
+.container-card-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-row {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    place-content: center stretch;
+}
+/* End Containers */
+
+
+/* ----------------------------------------- */
+
+/* Start Navbars */
+.custom-navbar {
+    margin: 1.3em;
+    text-align: center;
+}
+.custom-navbar-switch {
+    display: none;
+}
+.navbar-show {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: var(--primary-font-color) 2px solid;
+}
+/* End Navbars */
+
+/* ----------------------------------------- */
+
+/* Start Custom */
+.center {
+    width: fit-content;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 3px var(--primary-font-color) solid;
+    padding: .3em;
+}
+
+.custom-border {
+    width: 85%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    opacity: 1;
+    border: .2em solid var(--primary-font-color);
+    border-radius: 20px;
+}
+
+.custom-icon {
+    background-color: var(--primary-font-color);
+    border-radius: 20%;
+    color: black;
+    font-size: 2em;
+}
+/* End Custom */
+
+/* ----------------------------------------- */
+/* Start Media Queries */
+/* For Responsiveness:
+Small devices (landscape phones, 576px and up)
+
+Medium devices (tablets, 768px and up)
+
+Large devices (desktops, 992px and up)
+
+X-Large devices (large desktops, 1200px and up)
+
+XX-Large devices (larger desktops, 1400px and up)
+*/
+@media (max-width: 576px) { 
+    * {
+        font-size: calc(100vw/35);
+    }
+}
+@media (max-width: 750px) { 
+    .custom-navbar {
+        display: none;
+    }
+    .hide {
+        display: none;
+    }
+    .custom-navbar-switch {
+        display: inline-block;
+    }
+    .card {
+        margin-right: 1em !important;
+    }
+}
+@media (max-width: 770px) { 
+    .custom-row {
+        margin: auto;
+        width: 82%;
+    }
+}
+@media (max-width: 972px) { 
+    .custom-row {
+        margin: auto;
+        width: 60%;
+    }
+    .card {
+        margin-right: 5.5em;
+    }
+}
+@media (min-width: 768px) { 
+    * {
+        font-size: calc(100vw/50);
+    }
+}
+@media (min-width: 972px) { 
+    * {
+        font-size: calc(100vw/60);
+    }
+    .card {
+        margin-right: 2.3em;
+    }
+}
+@media (min-width: 1350px) { 
+    * {
+        font-size: calc(100vw/70);
+    }
+}
+/* End Media Queries */
