@@ -6,12 +6,12 @@
 
 # Technologies:
 ## Frontend
-- React Native
+- React
 - Axios
 ## Backend
-- Django
+- NodeJS | ExpressJS
 ## Database
-- SQL | PostegreSQL
+- NoSQL | MongoDB
 
 # Showcase:
 ## LOGIN
