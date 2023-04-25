@@ -1,4 +1,19 @@
-# PAGES
+# Name:
+- SoftwareHub
+ 
+# Description:
+- A content (courses, articles, challenges, etc) creation web platform for software engineering topics.
+
+# Technologies:
+## Frontend
+- React Native
+- Axios
+## Backend
+- Django
+## Database
+- SQL | PostegreSQL
+
+# Showcase:
 ## LOGIN
 ![Screenshot from 2022-09-07 17-21-18](https://user-images.githubusercontent.com/76432762/188907360-ce9499be-ac39-4488-ae11-d6a578fa802f.png)
 ## REGISTER
